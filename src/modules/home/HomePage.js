@@ -1,43 +1,34 @@
 import React, {Fragment} from "react";
-import Card from "../shared/Card";
 import ContactPage from "../contact/ContactPage";
 
 function HomePage() {
     return (
         <Fragment>
             <section id="presentacion" className="bg-light py-5 text-center">
-                <div className="container">
-                    <h2 className="display-5">¡El Sabor Original!</h2>
-                    <p className="lead">
-                        Disfruta del inconfundible sabor de nuestro pollo frito, hecho con la receta secreta de 11
-                        hierbas y especias del Coronel Sanders.
+                <div className="container py-4">
+                    <div className="mb-3">
+                        <i className="bi bi-check-circle-fill" style={{fontSize: "2.5rem", color: "#dc143c"}}></i>
+                    </div>
+                    <h2 className="display-6 fw-bold mb-3 text-danger">¡Formulario con Validaciones!</h2>
+                    <p className="lead text-secondary">
+                        Completa nuestro formulario validado con <span className="fw-semibold">React</span> y <span
+                        className="fw-semibold">Bootstrap</span> para contactarnos de forma fácil y segura.
                     </p>
-                    <a href="#contacto" className="btn btn-danger">¡Contáctanos Ahora!</a>
                 </div>
             </section>
 
-            <section id="mision-vision" className="py-5">
+
+            <section className="py-5 bg-white">
                 <div className="container">
-                    <div className="text-center mb-4">
-                        <h2 className="text-danger">Conoce KFC</h2>
-                        <p className="text-secondary">Más de 70 años llevando el mejor sabor a familias de todo el
-                            mundo</p>
-                    </div>
-                    <div className="row">
-                        <Card
-                            title="Nuestra Misión"
-                            description="Ofrecer comida rápida de calidad excepcional, con un sabor único e inigualable, brindando un servicio extraordinario que cree momentos de felicidad y satisfacción para nuestros clientes en cada visita."
-                        />
-                        <Card
-                            title="Nuestra Visión"
-                            description="Ser la cadena de restaurantes líder mundial en pollo frito, reconocida por nuestra calidad superior, innovación constante y compromiso genuino con las comunidades que servimos."
-                        />
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-md-8 col-lg-6">
+                            <div className="card shadow-lg rounded-4 p-4 p-md-5" style={{background: "#fff8f0"}}>
+                                <ContactPage/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <ContactPage/>
-
         </Fragment>
     );
 }

@@ -6,11 +6,11 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
             <div className="container">
-                <a className="navbar-brand text-danger fw-bold" href="#">KFC</a>
+                <a className="navbar-brand text-danger fw-bold" href="#">Formulario</a>
                 <button
                     className="navbar-toggler"
                     type="button"
-                    onClick={() => isMobileOpen(!open)}
+                    onClick={() => isMobileOpen(!isMenuOpen)}
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
